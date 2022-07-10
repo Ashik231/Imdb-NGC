@@ -1,33 +1,34 @@
 class Script(object):
-    START_TXT = """Hello {},
+    START_TXT = """ʜᴇʟʟᴏ {},
 
-My name is <a href=https://t.me/{}>{}</a>!
+ᴍʏ ᴏꜰꜰɪᴄɪᴀʟ ɴᴀᴍᴇ ɪꜱ <a href=https://t.me/{}>{}</a>!
 
-<b>I can provide Movies. A Telegram Auto Filter Bot. Its Easy To Use Me :)
+<b>ɪ ᴄᴀɴ ɢɪᴠᴇ ʏᴏᴜ ᴍᴏᴠɪᴇꜱ ᴀɴᴅ ꜱᴇʀɪᴇꜱ,ᴀɴᴅ ɪᴀᴍ ᴏꜰꜰɪᴄɪᴀʟʟʏ ᴍᴀᴅᴇ ꜰᴏʀ ᴛʜɪꜱ ɢʀᴏᴜᴘ @newgen_cinemazzz)
 
-Just Add me to Your Group As Admin, Hit The Help Button For More Info..</b>"""
+ʏᴏᴜ ᴄᴀɴ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ, ɪᴛ'ꜱ ɴᴏᴛ ᴀ ᴘʀᴏʙʟᴇᴍ, ᴀᴅᴅ ᴍᴇ ᴀꜱ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴ ᴀɴᴅ ɪ ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇꜱ...</b>"""
 
-    HELP_TXT = """Hey {}
+    HELP_TXT = """𝘏𝘦𝘭𝘭𝘰 {}
 
-<b>Here Is The Help For My Commands.</b>"""
+<b>𝘏𝘦𝘳𝘦 𝘪𝘴 𝘔𝘺 𝘏𝘦𝘭𝘱𝘪𝘯𝘨 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴</b>"""
 
-    ABOUT_TXT = """<b>➥ My name: {}
-➥ Creator: Zaute Km
-➥ Library: Pyrogram
-➥ Language: Python 𝟹
-➥ Data Base: MongoDB
-➥ Bot Server: Railway/Heroku
-➥ Build Status: v1.0.1 [ Beta ]"""
+    ABOUT_TXT = """<b>➥ 𝘔𝘺 𝘕𝘢𝘮𝘦 {}
+➥ 𝘖𝘸𝘯𝘦𝘳: <a href='https://t.me/Unavailable4allTime'>𝘈𝘴𝘩𝘪𝘬 𝘔𝘩𝘥</a>
+➥ 𝘔𝘢𝘪𝘯 𝘎𝘳𝘰𝘶𝘱: <a href='https://t.me/newgen_cinemazzz'>𝘕𝘦𝘸𝘎𝘦𝘯 𝘊𝘪𝘯𝘦𝘮𝘢𝘻𝘻𝘻</a>
+➥ 𝘓𝘢𝘯𝘨𝘶𝘢𝘨𝘦: 𝘗𝘺𝘵𝘩𝘰𝘯 3
+➥ 𝘋𝘢𝘵𝘢 𝘉𝘢𝘴𝘦: 𝘔𝘢𝘯𝘨𝘰 𝘋𝘉
+➥ 𝘉𝘰𝘵 𝘏𝘰𝘴𝘵: 𝘏𝘦𝘳𝘰𝘬𝘶
+➥ 𝘝𝘦𝘳𝘴𝘪𝘰𝘯: v1.0.1 [ Beta ]"""
 
-    SOURCE_TXT = """<b>Source:</b>
-IMDb is a Open source project.
-Source: <a href='https://github.com/josprojects/tgmoviebot'>GitHub - Click here 👈</a>
+    SOURCE_TXT = """<b>𝘚𝘰𝘶𝘳𝘤𝘦:</b>
+𝘕𝘎𝘊 𝘪𝘔𝘥𝘣 𝘉𝘰𝘵𝘴 𝘈𝘳𝘦 𝘛𝘳𝘶𝘦𝘭𝘺 𝘌𝘯𝘤𝘳𝘺𝘱𝘵𝘦𝘥 𝘗𝘳𝘰𝘫𝘦𝘤𝘵𝘴...
 
-<b>DEVS:</b>
-- <a href='https://t.me/josprojects'>Jos Projects</a>
+𝘚𝘰𝘶𝘳𝘤𝘦: <a href='https://telegra.ph/file/e3f71c7bc1eddecbe41ee.jpg'>𝘎𝘪𝘵-𝘏𝘶𝘣 𝘚𝘰𝘶𝘳𝘤𝘦 𝘊𝘰𝘥𝘦☜</a>
 
-<b>SUPPORT GROUP</b>
-- <a href='https://t.me/+y53tWFUw6Q43NzE9'>Jos Movie Club</a>"""
+<b>𝘔𝘢𝘪𝘯 𝘎𝘳𝘰𝘶𝘱</b>
+- <a href='https://t.me/newgen_cinemazzz'>𝙉𝙀𝙒𝙂𝙀𝙉 𝘾𝙄𝙉𝙀𝙈𝘼𝙕𝙕𝙕™</a>
+
+<b>𝘔𝘢𝘴𝘵𝘦𝘳 𝘉𝘳𝘢𝘪𝘯</b>
+- <a href='https://t.me/Unavailable4allTime'>𝘈𝘴𝘩𝘪𝘬 𝘔𝘩𝘥</a>"""
 
     MANUALFILTER_TXT = """Help: <b>Filters</b>
 
@@ -54,7 +55,7 @@ Source: <a href='https://github.com/josprojects/tgmoviebot'>GitHub - Click here 
 3. Buttons should be properly parsed as markdown format.
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/josprojects)</code>
+<code>[Button Text](buttonurl:https://t.me/Unavailable4allTime)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
@@ -220,11 +221,11 @@ This module only works for my admins
 <b>Used Storage:</b> <code>{}</code> MiB
 <b>Free Storage:</b> <code>{}</code> MiB"""
 
-    FORCESUB_TXT = """**♦️ READ THIS INSTRUCTION ♦️**
+    FORCESUB_TXT = """*▷𝑅𝑒𝑎𝑑 𝑇ℎ𝑖𝑠 𝑀𝑒𝑠𝑠𝑎𝑔𝑒◁**
 
-__🗣 In Order To Get The Movie Requested By You in Our Groups, You Will Have To Join Our Official Channel First. After That, Try Accessing That Movie Again From Our Group. I'll Send You That Movie Privately 🙈__
-
-**👇 JOIN THIS CHANNEL & TRY AGAIN 👇**"""
+__🗣 താങ്കൾ ഗ്രൂപ്പിൽ നിന്ന്‌ തിരഞ്ഞെടുത്ത മൂവി താങ്കൾക്ക് ലഭിക്കണമെങ്കിൽ താഴെ കൊടുത്തിരിക്കുന്ന ചാനലിൽ ജോയിൻ ആയ ശേഷം Try Again ഞെക്കുക🙂,__
+ 
+**⇩മുതലാളിയുടെ കല്പനകൾ😹⇩**"""
 
     MEMES_TXT = """Help: <b>Memes</b>
 
@@ -250,7 +251,7 @@ Some URLs is Shortner
 • /short <code>(link)</code> - I will send the shorted links.
 
 <b>Example:</b>
-<code>/short https://t.me/josprojects</code>
+<code>/short https://t.me/Unavailable4allTime</code>
 
 <b>NOTE:</b>
 • IMDb should have admin privillage.
