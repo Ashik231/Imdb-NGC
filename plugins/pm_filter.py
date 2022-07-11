@@ -76,14 +76,14 @@ async def next_page(bot, query):
 
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer(f"⚠️ Hey, {query.from_user.first_name}! Search Your Own File, Don't Click Others Results 😬", show_alert=True)
+        return await query.answer(f"⚠️ 𝘏𝘦𝘪, {query.from_user.first_name}!𝘕𝘪𝘤𝘦 𝘔𝘰𝘷𝘦,പക്ഷെ ഒരു കുഴപ്പമുണ്ട്,അവന്റെ റിപ്ലൈ അല്ല നിന്റെ റിപ്ലൈ😹,അത് കൊണ്ട് സ്വന്തമായി സെർച്ച് ചെയ്ത് എടുക്കൂ😬", show_alert=True)
     try:
         offset = int(offset)
     except:
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer(f"⚠️ Hey, {query.from_user.first_name}! You are using one of my old messages, send the request again ⚠️",show_alert=True)
+        await query.answer(f"⚠️ 𝘏𝘦𝘪, {query.from_user.first_name}! You are using one of my old messages, send the request again ⚠️",show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -149,20 +149,20 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer(f"⚠️ Hey, {query.from_user.first_name}! Search Your Own File, Don't Click Others Results 😬", show_alert=True)
+        return await query.answer(f"⚠️ 𝘏𝘦𝘪, {query.from_user.first_name}!𝘕𝘪𝘤𝘦 𝘔𝘰𝘷𝘦,പക്ഷെ ഒരു കുഴപ്പമുണ്ട്,അവന്റെ റിപ്ലൈ അല്ല നിന്റെ റിപ്ലൈ😹,അത് കൊണ്ട് സ്വന്തമായി സെർച്ച് ചെയ്ത് എടുക്കൂ😬", show_alert=True)
     if movie_  == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
     if not movies:
-        return await query.answer(f"⚠️ Hey, {query.from_user.first_name}! You are clicking on an old button which is expired ⚠️", show_alert=True)
+        return await query.answer(f"⚠️ 𝘏𝘦𝘪, {query.from_user.first_name}! You are clicking on an old button which is expired ⚠️", show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer('🔎 Checking for Movie in My database... 🔎')
+    await query.answer('𝘊𝘩𝘦𝘤𝘬𝘪𝘯𝘨 𝘍𝘰𝘳 𝘔𝘰𝘷𝘪𝘦 𝘐𝘯 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦🔎')
     files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
     if files:
         k = (movie, files, offset, total_results)
         await auto_filter(bot, query, k)
     else:
-        k = await query.message.edit(f'⚠️ Hey, {query.from_user.first_name}! This Movie Not Found In My DataBase ⚠️')
+        k = await query.message.edit(f'⚠️ 𝘏𝘦𝘪, {query.from_user.first_name}! ഈ മൂവി എന്റെ ഡാറ്റാബേസിൽ ഇല്ല 𝘊𝘰𝘯𝘵𝘢𝘤𝘵 𝘏𝘪𝘮▷@Unavailable4allTime')
         await asyncio.sleep(10)
         await k.delete()
     
@@ -409,7 +409,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer(f"Hey, {query.from_user.first_name}! I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=True)
+            await query.answer(f"Hey, {query.from_user.first_name}! ജോയിൻ ആകാതെ ഒന്നും നടക്കില്ല😶",show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -438,17 +438,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('Add me to your Chat', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('𝙉𝙀𝙒𝙂𝙀𝙉 𝘾𝙄𝙉𝙀𝙈𝘼𝙕𝙕𝙕™', url=f'https://t.me/newgen_cinemazzz')
             ],[
-            InlineKeyboardButton('help', callback_data='help'),
-            InlineKeyboardButton('about', callback_data='about')
+            InlineKeyboardButton('✆𝘏𝘦𝘭𝘱✆', callback_data='help'),
+            InlineKeyboardButton('✉𝘈𝘣𝘰𝘶𝘵✉', callback_data='about')
             ],[
-            InlineKeyboardButton('search here movie', switch_inline_query_current_chat='')
+            InlineKeyboardButton('⎋𝘚𝘦𝘢𝘳𝘤𝘩 𝘔𝘰𝘷𝘪𝘦𝘴⎋', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('updates', url='https://t.me/josprojects'),
-            InlineKeyboardButton('movie club', url='https://t.me/+y53tWFUw6Q43NzE9')
+            InlineKeyboardButton('⌖𝘖𝘸𝘯𝘦𝘳⌖', url='https://t.me/Unavailable4allTime'),
+            InlineKeyboardButton('⇚𝘕𝘦𝘸 𝘔𝘰𝘷𝘪𝘦𝘴⇛', url='https://t.me/Team_NGC')
             ],[
-            InlineKeyboardButton('✗ Close the Menu ✗', callback_data='close_data')
+            InlineKeyboardButton('✄𝘊𝘭𝘰𝘴𝘦 𝘛𝘩𝘪𝘴 𝘔𝘦𝘯𝘶✄', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -875,7 +875,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🎬 Title:</b> {search}\n\n<b>👥 Requested by: {message.from_user.mention}</b>\n<b>© Powered by: <a href='https://t.me/+y53tWFUw6Q43NzE9'>{message.chat.title}</a></b>\n\n<b>✍️ Note:</b> <s>This message will be Auto-deleted after 5 minutes to avoid copyright issues.</s>"
+        cap = f"<b>🎬 Title:</b> {search}\n\n<b>👥 Requested by: {message.from_user.mention}</b>\n<b>©𝘖𝘸𝘯𝘦𝘳: <a href='https://t.me/Unavailable4allTime'>{message.chat.title}</a></b>\n\n<b>✐</b> <s>𝘚𝘩𝘢𝘳𝘪𝘯𝘨 𝘖𝘧 𝘛𝘩𝘪𝘴 𝘎𝘳𝘰𝘶𝘱 𝘞𝘪𝘵𝘩 𝘠𝘰𝘶𝘳 𝘍𝘳𝘪𝘦𝘯𝘥𝘴 𝘞𝘰𝘶𝘭𝘥 𝘉𝘦 𝘈𝘸𝘦𝘴𝘰𝘮𝘦♡...</s>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
@@ -891,12 +891,12 @@ async def auto_filter(client, msg, spoll=False):
             await message.delete()
         except Exception as e:
             logger.exception(e)
-            fek = await message.reply_photo(photo="https://telegra.ph/file/82b5bbbab6d5e5593b6b2.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_photo(photo="https://telegra.ph/file/2647d5d2771b80e493779.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(300)
             await fek.delete()
             await msg.delete()
     else:
-        fuk = await message.reply_photo(photo="https://telegra.ph/file/8b42f6caf6ef5fd76766f.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+        fuk = await message.reply_photo(photo="https://telegra.ph/file/2647d5d2771b80e493779.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(300)
         await fuk.delete()
         await msg.delete()
@@ -913,7 +913,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply(f"Hey, {msg.from_user.mention}! I couldn't find any movie in that name.")
+        k = await msg.reply(f"Hey, {msg.from_user.mention}! എനിക് ഈ മൂവി കണ്ടുപിടിക്കാൻ കഴിഞ്ഞില്ല, താഴെ കാണുന്നവയിൽ ഏതെങ്കിലും ആണോ എന്നു പരിശോധിക്കുക👍")
         await asyncio.sleep(8)
         await k.delete()
         return
