@@ -13,7 +13,7 @@ class Script(object):
 
     ABOUT_TXT = """<b>➥ My name: {}
 ➥ 𝘔𝘢𝘴𝘵𝘦𝘳 𝘉𝘳𝘢𝘪𝘯: <a href='https://t.me/Unavailable4allTime'>𝘈𝘴𝘩𝘪𝘬 𝘔𝘩𝘥</a>"""
-➥ 𝘓𝘪𝘣𝘳𝘢𝘳𝘺: pyrogram
+➥ Library: pyrogram
 ➥ 𝘓𝘢𝘯𝘨𝘶𝘢𝘨𝘦: 𝘗𝘺𝘵𝘩𝘰𝘯 𝟹
 ➥ 𝘋𝘢𝘵𝘢 𝘉𝘢𝘴𝘦: 𝘔𝘢𝘯𝘨𝘰𝘋𝘉
 ➥ 𝘏𝘰𝘴𝘵 𝘚𝘦𝘳𝘷𝘦𝘳: 𝘏𝘦𝘳𝘰𝘬𝘶
