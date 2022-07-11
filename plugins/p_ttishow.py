@@ -47,7 +47,7 @@ async def save_group(bot, message):
     else:
         for u in message.new_chat_members:
             zaute = [[
-            InlineKeyboardButton('⇨മുതലാളി⇦', url="https:/t.me/Unavailable4allTime")
+            InlineKeyboardButton('⇨മുതലാളി⇦', url='https:/t.me/Unavailable4allTime')
         ]]
             if (temp.MELCOW).get('welcome') is not None:
                 try:
