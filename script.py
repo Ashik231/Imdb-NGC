@@ -11,7 +11,7 @@ class Script(object):
 
 <b>Here Is The Help For My Commands.</b>"""
 
-    ABOUT_TXT = """<b>➥ My name: {}
+    ABOUT_TXT = """<b>➥ 𝘔𝘺 𝘕𝘢𝘮𝘦{}
 ➥ 𝘔𝘢𝘴𝘵𝘦𝘳 𝘉𝘳𝘢𝘪𝘯: 𝘈𝘴𝘩𝘪𝘬 𝘔𝘩𝘥
 ➥ 𝘓𝘪𝘣𝘳𝘢𝘳𝘺: 𝘗𝘺𝘳𝘰𝘨𝘳𝘢𝘮
 ➥ 𝘓𝘢𝘯𝘨𝘶𝘢𝘨𝘦: 𝘗𝘺𝘵𝘩𝘰𝘯 𝟹
