@@ -875,7 +875,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🎬 Title:</b> {search}\n\n<b>👥 Requested by: {message.from_user.mention}</b>\n<b>©𝘖𝘸𝘯𝘦𝘳: <a href='https://t.me/Unavailable4allTime'>{message.chat.title}</a></b>\n\n<b>✐</b> <s>𝘚𝘩𝘢𝘳𝘪𝘯𝘨 𝘖𝘧 𝘛𝘩𝘪𝘴 𝘎𝘳𝘰𝘶𝘱 𝘞𝘪𝘵𝘩 𝘠𝘰𝘶𝘳 𝘍𝘳𝘪𝘦𝘯𝘥𝘴 𝘞𝘰𝘶𝘭𝘥 𝘉𝘦 𝘈𝘸𝘦𝘴𝘰𝘮𝘦♡...</s>"
+        cap = f"<b>🎬 Title:</b> {search}\n\n<b>👥 Requested by: {message.from_user.mention}</b>\n<b>©𝘖𝘸𝘯𝘦𝘳<a href='https://t.me/Unavailable4allTime'>{message.chat.title}</a></b>\n\n<b>✐</b> <s>𝘚𝘩𝘢𝘳𝘪𝘯𝘨 𝘖𝘧 𝘛𝘩𝘪𝘴 𝘎𝘳𝘰𝘶𝘱 𝘞𝘪𝘵𝘩 𝘠𝘰𝘶𝘳 𝘍𝘳𝘪𝘦𝘯𝘥𝘴 𝘞𝘰𝘶𝘭𝘥 𝘉𝘦 𝘈𝘸𝘦𝘴𝘰𝘮𝘦♡...</s>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
