@@ -37,17 +37,17 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('updates', url='https:/t.me/JosProjects')
+            InlineKeyboardButton('✆𝘏𝘦𝘭𝘱✆', url=f"https://t.me/{temp.U_NAME}?start=help"),
+            InlineKeyboardButton('𝘖𝘸𝘯𝘦𝘳', url='https:/t.me/Unavailable4allTime')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
+            text=f"<b>𝘛𝘩𝘢𝘯𝘬𝘴 𝘧𝘰𝘳 𝘈𝘥𝘥𝘪𝘯𝘨 𝘔𝘦 𝘐𝘯 {message.chat.title} ❣️\n\n𝘐𝘧 𝘠𝘰𝘶 𝘏𝘢𝘷𝘦 𝘢𝘯𝘺 𝘘𝘶𝘦𝘴𝘵𝘪𝘰𝘯𝘴 𝘰𝘳 𝘋𝘰𝘶𝘣𝘵𝘴 𝘊𝘰𝘯𝘵𝘢𝘤𝘵 𝘮𝘺 𝘖𝘸𝘯𝘦𝘳...</b>",
             reply_markup=reply_markup)
     else:
         for u in message.new_chat_members:
             zaute = [[
-            InlineKeyboardButton('👉 ⚠️ Press me... 🥰 👈', url="https://t.me/josprojects")
+            InlineKeyboardButton('⇨മുതലാളി⇦', url="https:/t.me/Unavailable4allTime")
         ]]
             if (temp.MELCOW).get('welcome') is not None:
                 try:
@@ -55,7 +55,7 @@ async def save_group(bot, message):
                 except:
                     pass
             temp.MELCOW['welcome'] = await message.reply_text(
-            text=f"<b>👋 Hi! {u.mention},</b> Welcome to <b>{message.chat.title}</b>\n\n<b>👇 Official Projects Channels 👇</b>",
+            text=f"<b>👋 Hi! {u.mention},</b> Welcome to <b>{message.chat.title}</b>\n\n<b>⇨മുതലാളി⇦</b>",
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup(zaute))
 
