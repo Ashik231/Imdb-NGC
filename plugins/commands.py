@@ -41,7 +41,7 @@ async def start(client, message):
             InlineKeyboardButton('𝙉𝙀𝙒𝙂𝙀𝙉 𝘾𝙄𝙉𝙀𝙈𝘼𝙕𝙕𝙕™', url=f'https://t.me/newgen_cinemazzz')
             ],[
             InlineKeyboardButton('✆𝘏𝘦𝘭𝘱✆', callback_data='help'),
-            InlineKeyboardButton('✉𝘈𝘣𝘰𝘶𝘵✉'', callback_data='about')
+            InlineKeyboardButton('✉𝘈𝘣𝘰𝘶𝘵✉', callback_data='about')
             ],[
             InlineKeyboardButton('⎋𝘚𝘦𝘢𝘳𝘤𝘩 𝘔𝘰𝘷𝘪𝘦𝘴⎋', switch_inline_query_current_chat='')
             ],[
